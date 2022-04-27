@@ -9,12 +9,28 @@ nav{
 	justify-content: space-around;
 	align-items: center;
 	min-height: 8vh;
-	background-color: #5D4954;
+	background-color: rgba(148, 42, 12, 0.586);
 	font-family: 'Poppins', sans-serif;
 }
 
+.logo img{
+	height: 100px;
+	width: 100px;
+	position: relative;
+	left: -5%;
+}
+
+.logo h4{
+	margin-top: 39px;
+	display: flex;
+	position: relative;
+	left: 1%;
+	color: black;
+}
+
 .logo{
-	color: crimson;
+	display: flex;
+	color: rgba(148, 42, 12, 0.586);
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 20px;
@@ -31,7 +47,7 @@ nav{
 }
 
 .nav-links a{
-	color: crimson;
+	color: black;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
@@ -46,8 +62,9 @@ nav{
 .burger div{
 	width: 25px;
 	height: 3px;
-	background-color: crimson;
+	background-color: rgb(255, 0, 0);
 	margin: 5px;
+	transition: all 0.3s ease;
 }
 
 @media screen and (max-width:1024px){
@@ -97,4 +114,16 @@ nav{
 		opacity: 1;
 		transform: translateX(0px);
 	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
 }
